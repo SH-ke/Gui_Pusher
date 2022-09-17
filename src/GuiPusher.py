@@ -6,7 +6,7 @@ import csv
 import configparser
 from fake_useragent import UserAgent
 import sched
-from cccWXpusher import sendmsg
+from wxbot import sendmsg
 
 
 class GuiPusher:

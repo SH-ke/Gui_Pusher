@@ -1,0 +1,4 @@
+## python=3.7.x
+attrdict==2.0.1
+PyYAML==6.0
+requests==2.28.1
