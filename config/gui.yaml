@@ -1,10 +1,15 @@
 # 请求数据
 resp:
   url: https://shop.laiyangni.com/api/lyn/wechat/home/shopInfo/v2
-  params:
-    sign: hP4OmmDtvFzjxryRNjVnIQ==
-    data: Sg2zSzc1Gl+o/VhUi2CzQUcCP7gVpDM/V+9cRbmWhC1U93A/vgQW/KgZexwCgYXvH5ck454hFSmmTv7BlSkrTWm0l3lpoTzZiavAZXiIfpcbik5DFAEfgjUYDScFld/v
-
+  office_b:
+    sign: WVGXQZv6TOb02bHtPX4oDA==
+    data: FvFERXohbOfWVgl8z+ZZb4dzFmSlqJ8QBvAv4scUSAyLESeKfVlNcpB21ZJI75RtC8j0dmmXpbxrDAoYtKswG9hwRmIWsP/04h7G0INNAvha4wFwLhT1nAdGxl9LsXXu
+  dorm: &data
+    sign: tEK46Ovd2sK/9ciiaoGwDw==
+    data: qQL0JVx3Wce8U9Xfaywyuz4jNLhdSqIoV6h81x9hEorMWnND7t7sxP6OMRTnCNdQVnHXFrwjr6U7av7jmNVvaupYWcB8qHLYkNkbuDTuKWtxdAKx+TPyYt2iPvQSNh9P
+  data: 
+    <<: *data # 引用锚点
+    
 # 微信机器人 wx-bot
 wxbot:
   url: http://wxpusher.zjiecode.com/api/send/message
